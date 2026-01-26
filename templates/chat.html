@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Lawyer</title>
+</head>
+<body>
+    <h2>Ask Legal Question</h2>
+
+    <form action="/ask" method="post">
+        <input type="text" name="question" placeholder="Ask your question" required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+    <h3>Answer:</h3>
+    <p>{{ answer }}</p>
+    {% endif %}
+    
+    
+   
+
+</body>
+</html>
+
