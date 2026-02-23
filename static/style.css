@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Upload Page */
+.container {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.container input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container button {
+    padding: 12px 25px;
+    background: #22c55e;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chat Page */
+.chat-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.chat-box {
+    background: #111827;
+    height: 400px;
+    padding: 15px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    border: 1px solid #374151;
+}
+
+.user-msg {
+    background: #2563eb;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px;
+    text-align: right;
+}
+
+.bot-msg {
+    background: #16a34a;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px;
+    text-align: left;
+}
+
+/* Input Box */
+.chat-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.chat-form button {
+    padding: 12px 20px;
+    background: #22c55e;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sample Questions */
+.sample {
+    margin-top: 20px;
+    background: #020617;
+    padding: 10px;
+    border-radius: 10px;
+}
