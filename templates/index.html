@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Virtual Lawyer</title>
+    <title>Virtual Lawyer - Upload Contract</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h2>GenAI Virtual Lawyer</h2>
+
+<div class="container">
+    <h1>⚖️ Virtual AI Lawyer</h1>
+    <p>Upload your legal document and ask questions</p>
 
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="pdf" required>
-        <br><br>
         <button type="submit">Upload Document</button>
     </form>
+</div>
+
 </body>
 </html>
