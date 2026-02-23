@@ -2,23 +2,25 @@
 <html>
 <head>
     <title>Ask Lawyer</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h2>Ask Legal Question</h2>
 
-    <form action="/ask" method="post">
-        <input type="text" name="question" placeholder="Ask your question" required>
+<div class="chat-container">
+    <h2>⚖️ Virtual Legal Assistant</h2>
+
+    {% if answer %}
+    <div class="bot-msg">
+        ⚖️ Lawyer: {{ answer }}
+    </div>
+    {% endif %}
+
+    <form action="/ask" method="post" class="chat-form">
+        <input type="text" name="question" placeholder="Ask legal question..." required>
         <button type="submit">Ask</button>
     </form>
 
-    {% if answer %}
-    <h3>Answer:</h3>
-    <p>{{ answer }}</p>
-    {% endif %}
-    
-    
-   
+</div>
 
 </body>
 </html>
-
